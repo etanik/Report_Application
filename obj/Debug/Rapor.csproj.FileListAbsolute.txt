@@ -1,0 +1,12 @@
+C:\Users\etanik\source\repos\Rapor\bin\Debug\Rapor.exe.config
+C:\Users\etanik\source\repos\Rapor\bin\Debug\Rapor.exe
+C:\Users\etanik\source\repos\Rapor\bin\Debug\Rapor.pdb
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.csprojAssemblyReference.cache
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.csproj.ResolveComReference.cache
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.Form1.resources
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.Properties.Resources.resources
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.csproj.GenerateResource.cache
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.csproj.CoreCompileInputs.cache
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.exe
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.pdb
+C:\Users\etanik\source\repos\Rapor\obj\Debug\Rapor.Form2.resources
