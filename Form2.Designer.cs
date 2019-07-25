@@ -85,7 +85,7 @@
             // 
             this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox4.Location = new System.Drawing.Point(734, 35);
+            this.textBox4.Location = new System.Drawing.Point(613, 22);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(272, 22);
@@ -94,12 +94,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1026, 129);
+            this.button2.Location = new System.Drawing.Point(905, 116);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 23);
             this.button2.TabIndex = 82;
             this.button2.Text = "Gözat";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click_1);
             // 
             // label19
             // 
@@ -136,7 +137,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(734, 132);
+            this.textBox1.Location = new System.Drawing.Point(613, 119);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(272, 22);
@@ -155,7 +156,7 @@
             // 
             this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.textBox2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(734, 102);
+            this.textBox2.Location = new System.Drawing.Point(613, 89);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(272, 22);
@@ -164,21 +165,23 @@
             // 
             // Import_Image
             // 
-            this.Import_Image.Location = new System.Drawing.Point(1026, 100);
+            this.Import_Image.Location = new System.Drawing.Point(905, 87);
             this.Import_Image.Name = "Import_Image";
             this.Import_Image.Size = new System.Drawing.Size(93, 23);
             this.Import_Image.TabIndex = 84;
             this.Import_Image.Text = "Gözat";
             this.Import_Image.UseVisualStyleBackColor = true;
+            this.Import_Image.Click += new System.EventHandler(this.Import_Image_Click_1);
             // 
             // openexcel
             // 
-            this.openexcel.Location = new System.Drawing.Point(1026, 64);
+            this.openexcel.Location = new System.Drawing.Point(905, 51);
             this.openexcel.Name = "openexcel";
             this.openexcel.Size = new System.Drawing.Size(93, 23);
             this.openexcel.TabIndex = 86;
             this.openexcel.Text = "Gözat";
             this.openexcel.UseVisualStyleBackColor = true;
+            this.openexcel.Click += new System.EventHandler(this.Openexcel_Click_1);
             // 
             // excelac
             // 
@@ -187,18 +190,19 @@
             // 
             // export
             // 
-            this.export.Location = new System.Drawing.Point(1026, 35);
+            this.export.Location = new System.Drawing.Point(905, 22);
             this.export.Name = "export";
             this.export.Size = new System.Drawing.Size(93, 23);
             this.export.TabIndex = 88;
             this.export.Text = "Gözat";
             this.export.UseVisualStyleBackColor = true;
+            this.export.Click += new System.EventHandler(this.Export_Click_1);
             // 
             // textBox3
             // 
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.textBox3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(734, 67);
+            this.textBox3.Location = new System.Drawing.Point(613, 54);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(272, 22);
@@ -470,14 +474,15 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(884, 165);
+            this.button1.Location = new System.Drawing.Point(613, 152);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 79);
+            this.button1.Size = new System.Drawing.Size(385, 79);
             this.button1.TabIndex = 45;
             this.button1.Text = "RAPORU OLUŞTUR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // Form2
             // 
@@ -529,7 +534,7 @@
             this.Controls.Add(this.siparis_no);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "RAPOR";
+            this.Name = "Form2";
             this.Text = "RAPOR";
             this.ResumeLayout(false);
             this.PerformLayout();

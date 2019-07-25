@@ -27,18 +27,20 @@ namespace Rapor
         string username = "TAG";
         string password = "TAG123";
 
+
         public Form1()
         {
             InitializeComponent();
-            
-            textBox2.PasswordChar = '*';
+            textBox2.PasswordChar = '•';
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+           
+
             if (textBox1.Text==username && textBox2.Text == password)
             {
+                
                 this.Hide();
                 Form2 rapor = new Form2();
                 rapor.Show();
@@ -62,6 +64,7 @@ namespace Rapor
         private void TextBox2_MouseClick(object sender, MouseEventArgs e)
         {
             textBox2.Clear();
+            
         }
     }
 }

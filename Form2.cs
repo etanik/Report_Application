@@ -32,7 +32,7 @@ namespace Rapor
         // Find and Replace:
         private void FindAndReplace(Microsoft.Office.Interop.Word.Application wordApp, object findText, object replaceWithText)
         {
-
+            
             object matchCase = true;
             object matchWholeWord = true;
             object matchWildCards = false;
@@ -48,7 +48,7 @@ namespace Rapor
             object visible = true;
             object replace = 2;
             object wrap = 1;
-
+            
             wordApp.Selection.Find.Execute(ref findText,
                         ref matchCase, ref matchWholeWord,
                         ref matchWildCards, ref matchSoundLike,
@@ -204,42 +204,13 @@ namespace Rapor
         // Load The Current Document:
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (LoadDoc.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = LoadDoc.FileName;
-                tEnabled(true);
-
-            }
+            
 
         }
         // Create The New Document:
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            if (SaveDoc.ShowDialog() == DialogResult.OK)
-            {
-                CreateWordDocument(textBox1.Text, SaveDoc.FileName, pathResim);
-                tEnabled(false);
-            }
-        }
-        private void Import_Image_Click(object sender, EventArgs e)
-        {
-            if (graphs.ShowDialog() == DialogResult.OK)
-            {
-                pathResim = graphs.SelectedPath;
-                button1.Enabled = true;
-            }
-        }
-        private void Picture_FileOk(object sender, CancelEventArgs e)
-        {
+            
 
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Export_Click(object sender, EventArgs e)
+        private void Export_Click_1(object sender, EventArgs e)
         {
             if (exportpath.ShowDialog() == DialogResult.OK)
             {
@@ -247,9 +218,8 @@ namespace Rapor
             }
         }
 
-        private void Openexcel_Click(object sender, EventArgs e)
+        private void Openexcel_Click_1(object sender, EventArgs e)
         {
-
             if (excelac.ShowDialog() == DialogResult.OK)
             {
                 textBox3.Text = excelac.FileName;
@@ -275,7 +245,34 @@ namespace Rapor
             }
         }
 
+        private void Import_Image_Click_1(object sender, EventArgs e)
+        {
+            if (graphs.ShowDialog() == DialogResult.OK)
+            {
+                pathResim = graphs.SelectedPath;
+                textBox2.Text = graphs.SelectedPath;
+                button1.Enabled = true;
+            }
+        }
 
+        private void Button2_Click_1(object sender, EventArgs e)
+        {
+            if (LoadDoc.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = LoadDoc.FileName;
+                tEnabled(true);
+
+            }
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            if (SaveDoc.ShowDialog() == DialogResult.OK)
+            {
+                CreateWordDocument(textBox1.Text, SaveDoc.FileName, pathResim);
+                tEnabled(false);
+            }
+        }
     }
 
 }
