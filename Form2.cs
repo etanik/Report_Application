@@ -62,6 +62,8 @@ namespace Rapor
 
         string pathResim = null;
 
+        
+
         // Create The Document:
         private void CreateWordDocument(object filename, object saveAs, object image)
         {
@@ -69,6 +71,8 @@ namespace Rapor
             object missing = Missing.Value;
             Word.Application wordApp = new Word.Application();
             Document aDoc = null;
+
+            
 
             if (File.Exists((string)filename))
             {
@@ -109,6 +113,7 @@ namespace Rapor
                 }
 
                 aDoc.Activate();
+
                 // find and replace commands:
                 this.FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
                 this.FindAndReplace(wordApp, "mm-yy", tarih.Text);
@@ -117,32 +122,33 @@ namespace Rapor
                 this.FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);
                 this.FindAndReplace(wordApp, "test_tarihi", test_tarihi.Text);
                 this.FindAndReplace(wordApp, "rapor_tarihi", rapor_tarihi.Text);
-                this.FindAndReplace(wordApp, "olcumu_gerceklestiren", olcumu_gerceklestiren.Text);
+                this.FindAndReplace(wordApp, "olcumu_gerceklestiren", olcumu_gerceklestiren.SelectedItem);
                 this.FindAndReplace(wordApp, "telefon_no", telefon_no.Text);
                 this.FindAndReplace(wordApp, "e_posta", e_posta.Text);
                 this.FindAndReplace(wordApp, "gemi_adi", gemi_adi.Text);
-                this.FindAndReplace(wordApp, "olcum_yeri", olcum_yeri.Text);
+                this.FindAndReplace(wordApp, "olcum_yeri", olcum_yeri.SelectedItem);
                 this.FindAndReplace(wordApp, "mahal", mahal.Text);
                 this.FindAndReplace(wordApp, "ekipman_model", ekipman_model.Text);
                 this.FindAndReplace(wordApp, "ekipman_guc", ekipman_guc.Text);
                 this.FindAndReplace(wordApp, "ekipman_devir", ekipman_devir.Text);
                 this.FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
 
-                int i = 1;
-                while (aDoc.Content.Bookmarks.Exists("a_" + i))
-                {
-                    object oMissed = aDoc.Bookmarks["a_" + i].Range;
-                    object oLinktoFile = false;
-                    object oSaveWithDocument = true;
-                    aDoc.InlineShapes.AddPicture(pathResim + @"\" + "Ortam " + i + ".png", ref oLinktoFile, ref oSaveWithDocument, ref oMissed);
-                    i++;
-                }
             }
 
             else
             {
                 MessageBox.Show("file dose not exist.");
                 return;
+            }
+
+            int i = 1;
+            while (aDoc.Content.Bookmarks.Exists("a_" + i))
+            {
+                object oMissed = aDoc.Bookmarks["a_" + i].Range;
+                object oLinktoFile = false;
+                object oSaveWithDocument = true;
+                aDoc.InlineShapes.AddPicture(pathResim + @"\" + "Ortam " + i + ".png", ref oLinktoFile, ref oSaveWithDocument, ref oMissed);
+                i++;
             }
             // Save as the document:
             aDoc.SaveAs2(ref saveAs, ref missing, ref missing, ref missing,
@@ -163,7 +169,7 @@ namespace Rapor
             {
                 if (Process.GetCurrentProcess().Id == clsProcess.Id)
                     continue;
-                if (clsProcess.ProcessName.Contains("WINWORD"))
+                if (clsProcess.ProcessName.Contains("WINWORD") || clsProcess.ProcessName.Contains("EXCEL"))
                 {
                     ProcessIDs.Add(clsProcess.Id);
                 }
@@ -190,26 +196,35 @@ namespace Rapor
                 }
             }
         }
-
-        private void tEnabled(bool state)
+        private void Import_Image_Click_1(object sender, EventArgs e)
         {
-
+            if (graphs.ShowDialog() == DialogResult.OK)
+            {
+                pathResim = graphs.SelectedPath;
+                textBox2.Text = graphs.SelectedPath;
+                button1.Enabled = true;
+            }
         }
-
-        private void Label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
         // Load The Current Document:
-        private void Button2_Click(object sender, EventArgs e)
+        private void Button2_Click_1(object sender, EventArgs e)
         {
-            
+            if (LoadDoc.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = LoadDoc.FileName;
+               
 
+            }
         }
         // Create The New Document:
-            
-
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            if (SaveDoc.ShowDialog() == DialogResult.OK)
+            {
+                CreateWordDocument(textBox1.Text, SaveDoc.FileName, pathResim);
+               
+            }
+        }
+                           
         private void Export_Click_1(object sender, EventArgs e)
         {
             if (exportpath.ShowDialog() == DialogResult.OK)
@@ -220,6 +235,8 @@ namespace Rapor
 
         private void Openexcel_Click_1(object sender, EventArgs e)
         {
+            List<int> processesbeforegen = getRunningProcesses();
+
             if (excelac.ShowDialog() == DialogResult.OK)
             {
                 textBox3.Text = excelac.FileName;
@@ -241,38 +258,16 @@ namespace Rapor
 
                     }
                 }
-                exc.Workbooks.Close();
+                progressBar1.Minimum = 0;
+                progressBar1.Maximum = 100;
+                progressBar1.Step = 10;
+                MessageBox.Show("The graphs are imported successfully.");
+                List<int> processesaftergen = getRunningProcesses();
+                killProcesses(processesbeforegen, processesaftergen);
             }
         }
 
-        private void Import_Image_Click_1(object sender, EventArgs e)
-        {
-            if (graphs.ShowDialog() == DialogResult.OK)
-            {
-                pathResim = graphs.SelectedPath;
-                textBox2.Text = graphs.SelectedPath;
-                button1.Enabled = true;
-            }
-        }
-
-        private void Button2_Click_1(object sender, EventArgs e)
-        {
-            if (LoadDoc.ShowDialog() == DialogResult.OK)
-            {
-                textBox1.Text = LoadDoc.FileName;
-                tEnabled(true);
-
-            }
-        }
-
-        private void Button1_Click_1(object sender, EventArgs e)
-        {
-            if (SaveDoc.ShowDialog() == DialogResult.OK)
-            {
-                CreateWordDocument(textBox1.Text, SaveDoc.FileName, pathResim);
-                tEnabled(false);
-            }
-        }
+        
     }
 
 }
