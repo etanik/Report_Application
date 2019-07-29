@@ -514,7 +514,7 @@
             this.progressBar1.ForeColor = System.Drawing.Color.Lime;
             this.progressBar1.Location = new System.Drawing.Point(16, 455);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1115, 23);
+            this.progressBar1.Size = new System.Drawing.Size(1120, 20);
             this.progressBar1.TabIndex = 98;
             // 
             // Form2

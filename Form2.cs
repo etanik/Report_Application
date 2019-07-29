@@ -203,6 +203,7 @@ namespace Rapor
                 pathResim = graphs.SelectedPath;
                 textBox2.Text = graphs.SelectedPath;
                 button1.Enabled = true;
+                progressBar1.Value = 60;
             }
         }
         // Load The Current Document:
@@ -211,7 +212,7 @@ namespace Rapor
             if (LoadDoc.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = LoadDoc.FileName;
-               
+                progressBar1.Value = 80;
 
             }
         }
@@ -221,7 +222,7 @@ namespace Rapor
             if (SaveDoc.ShowDialog() == DialogResult.OK)
             {
                 CreateWordDocument(textBox1.Text, SaveDoc.FileName, pathResim);
-               
+                progressBar1.Value = 100;
             }
         }
                            
@@ -230,6 +231,7 @@ namespace Rapor
             if (exportpath.ShowDialog() == DialogResult.OK)
             {
                 textBox4.Text = exportpath.SelectedPath;
+                progressBar1.Value = 20;
             }
         }
 
@@ -258,9 +260,7 @@ namespace Rapor
 
                     }
                 }
-                progressBar1.Minimum = 0;
-                progressBar1.Maximum = 100;
-                progressBar1.Step = 10;
+                progressBar1.Value = 40;
                 MessageBox.Show("The graphs are imported successfully.");
                 List<int> processesaftergen = getRunningProcesses();
                 killProcesses(processesbeforegen, processesaftergen);
