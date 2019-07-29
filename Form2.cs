@@ -70,7 +70,7 @@ namespace Rapor
             List<int> processesbeforegen = getRunningProcesses();
             object missing = Missing.Value;
             Word.Application wordApp = new Word.Application();
-            Document aDoc = null;
+            Document aDoc;
 
             
 
@@ -115,23 +115,23 @@ namespace Rapor
                 aDoc.Activate();
 
                 // find and replace commands:
-                this.FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
-                this.FindAndReplace(wordApp, "mm-yy", tarih.Text);
-                this.FindAndReplace(wordApp, "ekipman_adi", ekipman_adi.Text);
-                this.FindAndReplace(wordApp, "gign_no", gign_no.Text);
-                this.FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);
-                this.FindAndReplace(wordApp, "test_tarihi", test_tarihi.Text);
-                this.FindAndReplace(wordApp, "rapor_tarihi", rapor_tarihi.Text);
-                this.FindAndReplace(wordApp, "olcumu_gerceklestiren", olcumu_gerceklestiren.SelectedItem);
-                this.FindAndReplace(wordApp, "telefon_no", telefon_no.Text);
-                this.FindAndReplace(wordApp, "e_posta", e_posta.Text);
-                this.FindAndReplace(wordApp, "gemi_adi", gemi_adi.Text);
-                this.FindAndReplace(wordApp, "olcum_yeri", olcum_yeri.SelectedItem);
-                this.FindAndReplace(wordApp, "mahal", mahal.Text);
-                this.FindAndReplace(wordApp, "ekipman_model", ekipman_model.Text);
-                this.FindAndReplace(wordApp, "ekipman_guc", ekipman_guc.Text);
-                this.FindAndReplace(wordApp, "ekipman_devir", ekipman_devir.Text);
-                this.FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
+                FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
+                FindAndReplace(wordApp, "mm-yy", tarih.Text);
+                FindAndReplace(wordApp, "ekipman_adi", ekipman_adi.Text);
+                FindAndReplace(wordApp, "gign_no", gign_no.Text);
+                FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);
+                FindAndReplace(wordApp, "test_tarihi", test_tarihi.Text);
+                FindAndReplace(wordApp, "rapor_tarihi", rapor_tarihi.Text);
+                FindAndReplace(wordApp, "olcumu_gerceklestiren", olcumu_gerceklestiren.SelectedItem);
+                FindAndReplace(wordApp, "telefon_no", telefon_no.Text);
+                FindAndReplace(wordApp, "e_posta", e_posta.Text);
+                FindAndReplace(wordApp, "gemi_adi", gemi_adi.Text);
+                FindAndReplace(wordApp, "olcum_yeri", olcum_yeri.SelectedItem);
+                FindAndReplace(wordApp, "mahal", mahal.Text);
+                FindAndReplace(wordApp, "ekipman_model", ekipman_model.Text);
+                FindAndReplace(wordApp, "ekipman_guc", ekipman_guc.Text);
+                FindAndReplace(wordApp, "ekipman_devir", ekipman_devir.Text);
+                FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
 
             }
 
