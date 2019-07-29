@@ -157,7 +157,7 @@ namespace Rapor
                         ref missing, ref missing, ref missing,
                         ref missing, ref missing, ref missing);
 
-            MessageBox.Show("The report created successfully.");
+            MessageBox.Show("The report was created successfully.");
             List<int> processesaftergen = getRunningProcesses();
             killProcesses(processesbeforegen, processesaftergen);
         }
