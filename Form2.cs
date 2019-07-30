@@ -117,6 +117,7 @@ namespace Rapor
                 // find and replace commands:
                 FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
                 FindAndReplace(wordApp, "mm-yy", tarih.Text);
+                FindAndReplace(wordApp, "musteri_adi", musteri_adi.Text);
                 FindAndReplace(wordApp, "ekipman_adi", ekipman_adi.Text);
                 FindAndReplace(wordApp, "gign_no", gign_no.Text);
                 FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);
@@ -132,6 +133,13 @@ namespace Rapor
                 FindAndReplace(wordApp, "ekipman_guc", ekipman_guc.Text);
                 FindAndReplace(wordApp, "ekipman_devir", ekipman_devir.Text);
                 FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
+                FindAndReplace(wordApp, "olcum_cihazi", olcum_cihazi.Text);
+                FindAndReplace(wordApp, "analizator", analizator.Text);
+                FindAndReplace(wordApp, "ivme_olcer", ivme_olcer.Text);
+                FindAndReplace(wordApp, "fft_size", average.Text);
+                FindAndReplace(wordApp, "average", average.Text);
+                FindAndReplace(wordApp, "windowing", windowing.Text);
+                FindAndReplace(wordApp, "resolution", resolution.Text);
 
             }
 
