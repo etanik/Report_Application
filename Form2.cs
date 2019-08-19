@@ -133,6 +133,7 @@ namespace Rapor
                 FindAndReplace(wordApp, "ekipman_guc", textBox10.Text);
                 FindAndReplace(wordApp, "ekipman_devir", textBox9.Text);
                 FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
+                FindAndReplace(wordApp, "firma_dokuman_no", firma_dokuman_no.Text);
                 FindAndReplace(wordApp, "olcum_cihazi", olcum_cihazi.Text);
                 FindAndReplace(wordApp, "analizator", analizator.Text);
                 FindAndReplace(wordApp, "ivme_olcer", ivme_olcer.Text);

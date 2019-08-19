@@ -327,7 +327,7 @@
             this.firma_dokuman_no.Location = new System.Drawing.Point(134, 197);
             this.firma_dokuman_no.Name = "firma_dokuman_no";
             this.firma_dokuman_no.Size = new System.Drawing.Size(154, 23);
-            this.firma_dokuman_no.TabIndex = 69;
+            this.firma_dokuman_no.TabIndex = 7;
             // 
             // label9
             // 
@@ -355,7 +355,7 @@
             this.e_posta.Location = new System.Drawing.Point(135, 57);
             this.e_posta.Name = "e_posta";
             this.e_posta.Size = new System.Drawing.Size(153, 23);
-            this.e_posta.TabIndex = 65;
+            this.e_posta.TabIndex = 11;
             // 
             // label11
             // 
@@ -410,7 +410,7 @@
             this.uretici_firma.Location = new System.Drawing.Point(135, 86);
             this.uretici_firma.Name = "uretici_firma";
             this.uretici_firma.Size = new System.Drawing.Size(153, 23);
-            this.uretici_firma.TabIndex = 55;
+            this.uretici_firma.TabIndex = 3;
             // 
             // label8
             // 
@@ -483,7 +483,7 @@
             this.tarih.Mask = "00-00";
             this.tarih.Name = "tarih";
             this.tarih.Size = new System.Drawing.Size(153, 23);
-            this.tarih.TabIndex = 90;
+            this.tarih.TabIndex = 5;
             // 
             // test_tarihi
             // 
@@ -510,7 +510,7 @@
             this.telefon_no.Mask = "(0000) 000 00 00";
             this.telefon_no.Name = "telefon_no";
             this.telefon_no.Size = new System.Drawing.Size(153, 23);
-            this.telefon_no.TabIndex = 93;
+            this.telefon_no.TabIndex = 10;
             // 
             // proje_dokuman_no
             // 
@@ -519,7 +519,7 @@
             this.proje_dokuman_no.Mask = "000-A000-0000-000-000";
             this.proje_dokuman_no.Name = "proje_dokuman_no";
             this.proje_dokuman_no.Size = new System.Drawing.Size(154, 23);
-            this.proje_dokuman_no.TabIndex = 94;
+            this.proje_dokuman_no.TabIndex = 6;
             // 
             // olcum_yeri
             // 
@@ -557,7 +557,7 @@
             this.gemi_adi.Location = new System.Drawing.Point(135, 115);
             this.gemi_adi.Name = "gemi_adi";
             this.gemi_adi.Size = new System.Drawing.Size(153, 23);
-            this.gemi_adi.TabIndex = 97;
+            this.gemi_adi.TabIndex = 4;
             // 
             // groupBox1
             // 
@@ -580,7 +580,7 @@
             this.groupBox1.Location = new System.Drawing.Point(16, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(294, 255);
-            this.groupBox1.TabIndex = 101;
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri";
             // 
@@ -600,7 +600,7 @@
             this.musteri_adi.Location = new System.Drawing.Point(135, 55);
             this.musteri_adi.Name = "musteri_adi";
             this.musteri_adi.Size = new System.Drawing.Size(153, 23);
-            this.musteri_adi.TabIndex = 101;
+            this.musteri_adi.TabIndex = 2;
             // 
             // siparis_no
             // 
@@ -608,7 +608,7 @@
             this.siparis_no.Location = new System.Drawing.Point(135, 27);
             this.siparis_no.Name = "siparis_no";
             this.siparis_no.Size = new System.Drawing.Size(153, 23);
-            this.siparis_no.TabIndex = 49;
+            this.siparis_no.TabIndex = 1;
             // 
             // label1
             // 
@@ -673,7 +673,7 @@
             this.groupBox4.Location = new System.Drawing.Point(16, 273);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(294, 130);
-            this.groupBox4.TabIndex = 104;
+            this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Hazırlayan";
             // 
@@ -698,7 +698,7 @@
             this.groupBox5.Location = new System.Drawing.Point(621, 10);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(337, 250);
-            this.groupBox5.TabIndex = 105;
+            this.groupBox5.TabIndex = 24;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ölçüm Sistemi";
             // 
@@ -708,7 +708,7 @@
             this.ivme_olcer.Location = new System.Drawing.Point(171, 84);
             this.ivme_olcer.Name = "ivme_olcer";
             this.ivme_olcer.Size = new System.Drawing.Size(153, 23);
-            this.ivme_olcer.TabIndex = 102;
+            this.ivme_olcer.TabIndex = 27;
             // 
             // olcum_cihazi
             // 
@@ -716,7 +716,7 @@
             this.olcum_cihazi.Location = new System.Drawing.Point(171, 29);
             this.olcum_cihazi.Name = "olcum_cihazi";
             this.olcum_cihazi.Size = new System.Drawing.Size(153, 23);
-            this.olcum_cihazi.TabIndex = 96;
+            this.olcum_cihazi.TabIndex = 25;
             // 
             // analizator
             // 
@@ -724,7 +724,7 @@
             this.analizator.Location = new System.Drawing.Point(171, 56);
             this.analizator.Name = "analizator";
             this.analizator.Size = new System.Drawing.Size(153, 23);
-            this.analizator.TabIndex = 97;
+            this.analizator.TabIndex = 26;
             // 
             // fft_size
             // 
@@ -732,7 +732,7 @@
             this.fft_size.Location = new System.Drawing.Point(171, 116);
             this.fft_size.Name = "fft_size";
             this.fft_size.Size = new System.Drawing.Size(153, 23);
-            this.fft_size.TabIndex = 98;
+            this.fft_size.TabIndex = 28;
             // 
             // average
             // 
@@ -740,7 +740,7 @@
             this.average.Location = new System.Drawing.Point(171, 144);
             this.average.Name = "average";
             this.average.Size = new System.Drawing.Size(153, 23);
-            this.average.TabIndex = 99;
+            this.average.TabIndex = 29;
             // 
             // resolution
             // 
@@ -748,7 +748,7 @@
             this.resolution.Location = new System.Drawing.Point(171, 202);
             this.resolution.Name = "resolution";
             this.resolution.Size = new System.Drawing.Size(153, 23);
-            this.resolution.TabIndex = 101;
+            this.resolution.TabIndex = 31;
             // 
             // windowing
             // 
@@ -756,7 +756,7 @@
             this.windowing.Location = new System.Drawing.Point(171, 173);
             this.windowing.Name = "windowing";
             this.windowing.Size = new System.Drawing.Size(153, 23);
-            this.windowing.TabIndex = 100;
+            this.windowing.TabIndex = 30;
             // 
             // label27
             // 
@@ -849,7 +849,7 @@
             this.groupBox6.Location = new System.Drawing.Point(316, 10);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(299, 257);
-            this.groupBox6.TabIndex = 102;
+            this.groupBox6.TabIndex = 12;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Ekipman";
             // 
@@ -869,7 +869,7 @@
             this.textBox5.Location = new System.Drawing.Point(141, 29);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(152, 23);
-            this.textBox5.TabIndex = 51;
+            this.textBox5.TabIndex = 13;
             // 
             // label21
             // 
@@ -887,7 +887,7 @@
             this.textBox6.Location = new System.Drawing.Point(141, 56);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(152, 23);
-            this.textBox6.TabIndex = 53;
+            this.textBox6.TabIndex = 14;
             // 
             // comboBox1
             // 
@@ -899,7 +899,7 @@
             this.comboBox1.Location = new System.Drawing.Point(140, 84);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(153, 23);
-            this.comboBox1.TabIndex = 95;
+            this.comboBox1.TabIndex = 15;
             // 
             // label22
             // 
@@ -927,7 +927,7 @@
             this.textBox7.Location = new System.Drawing.Point(140, 116);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(153, 23);
-            this.textBox7.TabIndex = 75;
+            this.textBox7.TabIndex = 16;
             // 
             // label24
             // 
@@ -945,7 +945,7 @@
             this.textBox8.Location = new System.Drawing.Point(140, 144);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(153, 23);
-            this.textBox8.TabIndex = 77;
+            this.textBox8.TabIndex = 17;
             // 
             // textBox9
             // 
@@ -953,7 +953,7 @@
             this.textBox9.Location = new System.Drawing.Point(140, 202);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(153, 23);
-            this.textBox9.TabIndex = 81;
+            this.textBox9.TabIndex = 19;
             // 
             // label25
             // 
@@ -981,7 +981,7 @@
             this.textBox10.Location = new System.Drawing.Point(140, 173);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(153, 23);
-            this.textBox10.TabIndex = 79;
+            this.textBox10.TabIndex = 18;
             // 
             // progressBar1
             // 
@@ -1003,7 +1003,7 @@
             this.groupBox7.Location = new System.Drawing.Point(316, 273);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(299, 130);
-            this.groupBox7.TabIndex = 103;
+            this.groupBox7.TabIndex = 20;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ölçüm";
             // 
@@ -1031,7 +1031,7 @@
             this.comboBox2.Location = new System.Drawing.Point(140, 21);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(153, 23);
-            this.comboBox2.TabIndex = 96;
+            this.comboBox2.TabIndex = 21;
             // 
             // label35
             // 
@@ -1060,7 +1060,7 @@
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(152, 23);
-            this.maskedTextBox1.TabIndex = 91;
+            this.maskedTextBox1.TabIndex = 22;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // maskedTextBox2
@@ -1070,7 +1070,7 @@
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(153, 23);
-            this.maskedTextBox2.TabIndex = 92;
+            this.maskedTextBox2.TabIndex = 23;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
             // Form2
