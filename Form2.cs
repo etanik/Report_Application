@@ -118,26 +118,26 @@ namespace Rapor
                 FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
                 FindAndReplace(wordApp, "mm-yy", tarih.Text);
                 FindAndReplace(wordApp, "musteri_adi", musteri_adi.Text);
-                FindAndReplace(wordApp, "ekipman_adi", ekipman_adi.Text);
-                FindAndReplace(wordApp, "gign_no", gign_no.Text);
+                FindAndReplace(wordApp, "ekipman_adi", textBox5.Text);
+                FindAndReplace(wordApp, "gign_no", textBox6.Text);
                 FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);
-                FindAndReplace(wordApp, "test_tarihi", test_tarihi.Text);
-                FindAndReplace(wordApp, "rapor_tarihi", rapor_tarihi.Text);
-                FindAndReplace(wordApp, "olcumu_gerceklestiren", olcumu_gerceklestiren.SelectedItem);
+                FindAndReplace(wordApp, "test_tarihi", maskedTextBox1.Text);
+                FindAndReplace(wordApp, "rapor_tarihi", maskedTextBox2.Text);
+                FindAndReplace(wordApp, "olcumu_gerceklestiren", comboBox2.SelectedItem);
                 FindAndReplace(wordApp, "telefon_no", telefon_no.Text);
                 FindAndReplace(wordApp, "e_posta", e_posta.Text);
                 FindAndReplace(wordApp, "gemi_adi", gemi_adi.Text);
-                FindAndReplace(wordApp, "olcum_yeri", olcum_yeri.SelectedItem);
-                FindAndReplace(wordApp, "mahal", mahal.Text);
-                FindAndReplace(wordApp, "ekipman_model", ekipman_model.Text);
-                FindAndReplace(wordApp, "ekipman_guc", ekipman_guc.Text);
-                FindAndReplace(wordApp, "ekipman_devir", ekipman_devir.Text);
+                FindAndReplace(wordApp, "olcum_yeri", comboBox1.SelectedItem);
+                FindAndReplace(wordApp, "mahal", textBox7.Text);
+                FindAndReplace(wordApp, "ekipman_model", textBox8.Text);
+                FindAndReplace(wordApp, "ekipman_guc", textBox10.Text);
+                FindAndReplace(wordApp, "ekipman_devir", textBox9.Text);
                 FindAndReplace(wordApp, "proje_dokuman_no", proje_dokuman_no.Text);
                 FindAndReplace(wordApp, "olcum_cihazi", olcum_cihazi.Text);
                 FindAndReplace(wordApp, "analizator", analizator.Text);
                 FindAndReplace(wordApp, "ivme_olcer", ivme_olcer.Text);
                 FindAndReplace(wordApp, "fft_size", average.Text);
-                FindAndReplace(wordApp, "average", average.Text);
+                FindAndReplace(wordApp, "average_quantity", average.Text);
                 FindAndReplace(wordApp, "windowing", windowing.Text);
                 FindAndReplace(wordApp, "resolution", resolution.Text);
 
@@ -251,7 +251,9 @@ namespace Rapor
             {
                 textBox3.Text = excelac.FileName;
                 Excel.Application exc = new Excel.Application();
-                exc.Visible = false;
+                {
+                    Visible = false;
+                }
                 exc.Workbooks.Open(textBox3.Text);
                 Worksheet sheet = exc.Worksheets[1];
                 sheet.Activate();

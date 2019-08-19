@@ -78,14 +78,28 @@
             this.olcumu_gerceklestiren = new System.Windows.Forms.ComboBox();
             this.gemi_adi = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.siparis_no = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.musteri_adi = new System.Windows.Forms.TextBox();
+            this.siparis_no = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.ivme_olcer = new System.Windows.Forms.TextBox();
+            this.olcum_cihazi = new System.Windows.Forms.TextBox();
+            this.analizator = new System.Windows.Forms.TextBox();
+            this.fft_size = new System.Windows.Forms.TextBox();
+            this.average = new System.Windows.Forms.TextBox();
+            this.resolution = new System.Windows.Forms.TextBox();
+            this.windowing = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -101,20 +115,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.olcum_cihazi = new System.Windows.Forms.TextBox();
-            this.analizator = new System.Windows.Forms.TextBox();
-            this.fft_size = new System.Windows.Forms.TextBox();
-            this.average = new System.Windows.Forms.TextBox();
-            this.resolution = new System.Windows.Forms.TextBox();
-            this.windowing = new System.Windows.Forms.TextBox();
-            this.ivme_olcer = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -323,6 +323,7 @@
             // 
             // firma_dokuman_no
             // 
+            this.firma_dokuman_no.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.firma_dokuman_no.Location = new System.Drawing.Point(134, 197);
             this.firma_dokuman_no.Name = "firma_dokuman_no";
             this.firma_dokuman_no.Size = new System.Drawing.Size(154, 23);
@@ -405,6 +406,7 @@
             // 
             // uretici_firma
             // 
+            this.uretici_firma.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.uretici_firma.Location = new System.Drawing.Point(135, 86);
             this.uretici_firma.Name = "uretici_firma";
             this.uretici_firma.Size = new System.Drawing.Size(153, 23);
@@ -476,6 +478,7 @@
             // 
             // tarih
             // 
+            this.tarih.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tarih.Location = new System.Drawing.Point(135, 141);
             this.tarih.Mask = "00-00";
             this.tarih.Name = "tarih";
@@ -511,6 +514,7 @@
             // 
             // proje_dokuman_no
             // 
+            this.proje_dokuman_no.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.proje_dokuman_no.Location = new System.Drawing.Point(134, 168);
             this.proje_dokuman_no.Mask = "000-A000-0000-000-000";
             this.proje_dokuman_no.Name = "proje_dokuman_no";
@@ -545,6 +549,7 @@
             // 
             // gemi_adi
             // 
+            this.gemi_adi.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.gemi_adi.FormattingEnabled = true;
             this.gemi_adi.Items.AddRange(new object[] {
             "TCG BURGAZADA (F513)",
@@ -579,8 +584,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(6, 62);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(69, 15);
+            this.label17.TabIndex = 102;
+            this.label17.Text = "Müşteri Adı";
+            // 
+            // musteri_adi
+            // 
+            this.musteri_adi.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.musteri_adi.Location = new System.Drawing.Point(135, 55);
+            this.musteri_adi.Name = "musteri_adi";
+            this.musteri_adi.Size = new System.Drawing.Size(153, 23);
+            this.musteri_adi.TabIndex = 101;
+            // 
             // siparis_no
             // 
+            this.siparis_no.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.siparis_no.Location = new System.Drawing.Point(135, 27);
             this.siparis_no.Name = "siparis_no";
             this.siparis_no.Size = new System.Drawing.Size(153, 23);
@@ -595,23 +619,6 @@
             this.label1.Size = new System.Drawing.Size(63, 15);
             this.label1.TabIndex = 48;
             this.label1.Text = "Sipariş No";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label17.Location = new System.Drawing.Point(6, 62);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 15);
-            this.label17.TabIndex = 102;
-            this.label17.Text = "Müşteri Adı";
-            // 
-            // musteri_adi
-            // 
-            this.musteri_adi.Location = new System.Drawing.Point(135, 55);
-            this.musteri_adi.Name = "musteri_adi";
-            this.musteri_adi.Size = new System.Drawing.Size(153, 23);
-            this.musteri_adi.TabIndex = 101;
             // 
             // groupBox2
             // 
@@ -695,153 +702,61 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Ölçüm Sistemi";
             // 
-            // groupBox6
+            // ivme_olcer
             // 
-            this.groupBox6.AutoSize = true;
-            this.groupBox6.Controls.Add(this.label18);
-            this.groupBox6.Controls.Add(this.textBox5);
-            this.groupBox6.Controls.Add(this.label21);
-            this.groupBox6.Controls.Add(this.textBox6);
-            this.groupBox6.Controls.Add(this.comboBox1);
-            this.groupBox6.Controls.Add(this.label22);
-            this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Controls.Add(this.textBox7);
-            this.groupBox6.Controls.Add(this.label24);
-            this.groupBox6.Controls.Add(this.textBox8);
-            this.groupBox6.Controls.Add(this.textBox9);
-            this.groupBox6.Controls.Add(this.label25);
-            this.groupBox6.Controls.Add(this.label26);
-            this.groupBox6.Controls.Add(this.textBox10);
-            this.groupBox6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox6.Location = new System.Drawing.Point(316, 10);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(299, 257);
-            this.groupBox6.TabIndex = 102;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Ekipman";
+            this.ivme_olcer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ivme_olcer.Location = new System.Drawing.Point(171, 84);
+            this.ivme_olcer.Name = "ivme_olcer";
+            this.ivme_olcer.Size = new System.Drawing.Size(153, 23);
+            this.ivme_olcer.TabIndex = 102;
             // 
-            // label18
+            // olcum_cihazi
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label18.Location = new System.Drawing.Point(6, 32);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 15);
-            this.label18.TabIndex = 50;
-            this.label18.Text = "Ekipman Adı";
+            this.olcum_cihazi.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.olcum_cihazi.Location = new System.Drawing.Point(171, 29);
+            this.olcum_cihazi.Name = "olcum_cihazi";
+            this.olcum_cihazi.Size = new System.Drawing.Size(153, 23);
+            this.olcum_cihazi.TabIndex = 96;
             // 
-            // textBox5
+            // analizator
             // 
-            this.textBox5.Location = new System.Drawing.Point(141, 29);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(152, 23);
-            this.textBox5.TabIndex = 51;
+            this.analizator.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.analizator.Location = new System.Drawing.Point(171, 56);
+            this.analizator.Name = "analizator";
+            this.analizator.Size = new System.Drawing.Size(153, 23);
+            this.analizator.TabIndex = 97;
             // 
-            // label21
+            // fft_size
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.Location = new System.Drawing.Point(6, 59);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(53, 15);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "GIGN No";
+            this.fft_size.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.fft_size.Location = new System.Drawing.Point(171, 116);
+            this.fft_size.Name = "fft_size";
+            this.fft_size.Size = new System.Drawing.Size(153, 23);
+            this.fft_size.TabIndex = 98;
             // 
-            // textBox6
+            // average
             // 
-            this.textBox6.Location = new System.Drawing.Point(141, 56);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 23);
-            this.textBox6.TabIndex = 53;
+            this.average.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.average.Location = new System.Drawing.Point(171, 144);
+            this.average.Name = "average";
+            this.average.Size = new System.Drawing.Size(153, 23);
+            this.average.TabIndex = 99;
             // 
-            // comboBox1
+            // resolution
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "İstanbul Tersanesinde",
-            "Seyir halinde"});
-            this.comboBox1.Location = new System.Drawing.Point(140, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(153, 23);
-            this.comboBox1.TabIndex = 95;
+            this.resolution.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.resolution.Location = new System.Drawing.Point(171, 202);
+            this.resolution.Name = "resolution";
+            this.resolution.Size = new System.Drawing.Size(153, 23);
+            this.resolution.TabIndex = 101;
             // 
-            // label22
+            // windowing
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label22.Location = new System.Drawing.Point(6, 87);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 15);
-            this.label22.TabIndex = 72;
-            this.label22.Text = "Ölçüm Yeri";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label23.Location = new System.Drawing.Point(6, 119);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(43, 15);
-            this.label23.TabIndex = 74;
-            this.label23.Text = "Mahal";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(140, 116);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(153, 23);
-            this.textBox7.TabIndex = 75;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label24.Location = new System.Drawing.Point(6, 147);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 15);
-            this.label24.TabIndex = 76;
-            this.label24.Text = "Model";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(140, 144);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(153, 23);
-            this.textBox8.TabIndex = 77;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(140, 202);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(153, 23);
-            this.textBox9.TabIndex = 81;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label25.Location = new System.Drawing.Point(6, 176);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(28, 15);
-            this.label25.TabIndex = 78;
-            this.label25.Text = "Güç";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label26.Location = new System.Drawing.Point(6, 202);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(36, 15);
-            this.label26.TabIndex = 80;
-            this.label26.Text = "Devir";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(140, 173);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(153, 23);
-            this.textBox10.TabIndex = 79;
+            this.windowing.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.windowing.Location = new System.Drawing.Point(171, 173);
+            this.windowing.Name = "windowing";
+            this.windowing.Size = new System.Drawing.Size(153, 23);
+            this.windowing.TabIndex = 100;
             // 
             // label27
             // 
@@ -913,54 +828,160 @@
             this.label33.TabIndex = 87;
             this.label33.Text = "Çözünürlük";
             // 
-            // olcum_cihazi
+            // groupBox6
             // 
-            this.olcum_cihazi.Location = new System.Drawing.Point(171, 29);
-            this.olcum_cihazi.Name = "olcum_cihazi";
-            this.olcum_cihazi.Size = new System.Drawing.Size(153, 23);
-            this.olcum_cihazi.TabIndex = 96;
+            this.groupBox6.AutoSize = true;
+            this.groupBox6.Controls.Add(this.label18);
+            this.groupBox6.Controls.Add(this.textBox5);
+            this.groupBox6.Controls.Add(this.label21);
+            this.groupBox6.Controls.Add(this.textBox6);
+            this.groupBox6.Controls.Add(this.comboBox1);
+            this.groupBox6.Controls.Add(this.label22);
+            this.groupBox6.Controls.Add(this.label23);
+            this.groupBox6.Controls.Add(this.textBox7);
+            this.groupBox6.Controls.Add(this.label24);
+            this.groupBox6.Controls.Add(this.textBox8);
+            this.groupBox6.Controls.Add(this.textBox9);
+            this.groupBox6.Controls.Add(this.label25);
+            this.groupBox6.Controls.Add(this.label26);
+            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox6.Location = new System.Drawing.Point(316, 10);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(299, 257);
+            this.groupBox6.TabIndex = 102;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Ekipman";
             // 
-            // analizator
+            // label18
             // 
-            this.analizator.Location = new System.Drawing.Point(171, 56);
-            this.analizator.Name = "analizator";
-            this.analizator.Size = new System.Drawing.Size(153, 23);
-            this.analizator.TabIndex = 97;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label18.Location = new System.Drawing.Point(6, 32);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 15);
+            this.label18.TabIndex = 50;
+            this.label18.Text = "Ekipman Adı";
             // 
-            // fft_size
+            // textBox5
             // 
-            this.fft_size.Location = new System.Drawing.Point(171, 116);
-            this.fft_size.Name = "fft_size";
-            this.fft_size.Size = new System.Drawing.Size(153, 23);
-            this.fft_size.TabIndex = 98;
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox5.Location = new System.Drawing.Point(141, 29);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(152, 23);
+            this.textBox5.TabIndex = 51;
             // 
-            // average
+            // label21
             // 
-            this.average.Location = new System.Drawing.Point(171, 144);
-            this.average.Name = "average";
-            this.average.Size = new System.Drawing.Size(153, 23);
-            this.average.TabIndex = 99;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label21.Location = new System.Drawing.Point(6, 59);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(53, 15);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "GIGN No";
             // 
-            // resolution
+            // textBox6
             // 
-            this.resolution.Location = new System.Drawing.Point(171, 202);
-            this.resolution.Name = "resolution";
-            this.resolution.Size = new System.Drawing.Size(153, 23);
-            this.resolution.TabIndex = 101;
+            this.textBox6.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox6.Location = new System.Drawing.Point(141, 56);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(152, 23);
+            this.textBox6.TabIndex = 53;
             // 
-            // windowing
+            // comboBox1
             // 
-            this.windowing.Location = new System.Drawing.Point(171, 173);
-            this.windowing.Name = "windowing";
-            this.windowing.Size = new System.Drawing.Size(153, 23);
-            this.windowing.TabIndex = 100;
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "İstanbul Tersanesinde",
+            "Seyir halinde"});
+            this.comboBox1.Location = new System.Drawing.Point(140, 84);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(153, 23);
+            this.comboBox1.TabIndex = 95;
             // 
-            // ivme_olcer
+            // label22
             // 
-            this.ivme_olcer.Location = new System.Drawing.Point(171, 84);
-            this.ivme_olcer.Name = "ivme_olcer";
-            this.ivme_olcer.Size = new System.Drawing.Size(153, 23);
-            this.ivme_olcer.TabIndex = 102;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label22.Location = new System.Drawing.Point(6, 87);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 15);
+            this.label22.TabIndex = 72;
+            this.label22.Text = "Ölçüm Yeri";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label23.Location = new System.Drawing.Point(6, 119);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(43, 15);
+            this.label23.TabIndex = 74;
+            this.label23.Text = "Mahal";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox7.Location = new System.Drawing.Point(140, 116);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(153, 23);
+            this.textBox7.TabIndex = 75;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label24.Location = new System.Drawing.Point(6, 147);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(42, 15);
+            this.label24.TabIndex = 76;
+            this.label24.Text = "Model";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox8.Location = new System.Drawing.Point(140, 144);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(153, 23);
+            this.textBox8.TabIndex = 77;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox9.Location = new System.Drawing.Point(140, 202);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(153, 23);
+            this.textBox9.TabIndex = 81;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label25.Location = new System.Drawing.Point(6, 176);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(28, 15);
+            this.label25.TabIndex = 78;
+            this.label25.Text = "Güç";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label26.Location = new System.Drawing.Point(6, 202);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(36, 15);
+            this.label26.TabIndex = 80;
+            this.label26.Text = "Devir";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox10.Location = new System.Drawing.Point(140, 173);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(153, 23);
+            this.textBox10.TabIndex = 79;
             // 
             // progressBar1
             // 
@@ -998,6 +1019,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Yunus Emre TANIK",
@@ -1033,6 +1055,7 @@
             // 
             // maskedTextBox1
             // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox1.Location = new System.Drawing.Point(141, 53);
             this.maskedTextBox1.Mask = "00/00/0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
@@ -1042,6 +1065,7 @@
             // 
             // maskedTextBox2
             // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox2.Location = new System.Drawing.Point(140, 85);
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
@@ -1053,7 +1077,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 485);
+            this.ClientSize = new System.Drawing.Size(966, 488);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
