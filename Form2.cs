@@ -253,7 +253,7 @@ namespace Rapor
                 textBox3.Text = excelac.FileName;
                 Excel.Application exc = new Excel.Application();
                 {
-                    Visible = false;
+                    exc.Visible = false;
                 }
                 exc.Workbooks.Open(textBox3.Text);
                 Worksheet sheet = exc.Worksheets[1];
