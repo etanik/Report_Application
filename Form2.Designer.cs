@@ -136,19 +136,19 @@
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox4.Enabled = false;
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox4.Location = new System.Drawing.Point(621, 273);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(238, 22);
+            this.textBox4.Size = new System.Drawing.Size(263, 23);
             this.textBox4.TabIndex = 89;
             this.textBox4.Text = "Grafikleri kopyalamak istediğiniz klasörü seçiniz.";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(865, 368);
+            this.button2.Location = new System.Drawing.Point(890, 368);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 23);
+            this.button2.Size = new System.Drawing.Size(68, 23);
             this.button2.TabIndex = 82;
             this.button2.Text = "Gözat";
             this.button2.UseVisualStyleBackColor = true;
@@ -188,11 +188,12 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(621, 370);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(238, 22);
+            this.textBox1.Size = new System.Drawing.Size(263, 23);
             this.textBox1.TabIndex = 83;
             this.textBox1.Text = "Tüm girdilerin ekleneceği raporu seçiniz.";
             // 
@@ -208,19 +209,20 @@
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox2.Enabled = false;
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.Location = new System.Drawing.Point(621, 340);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(238, 22);
+            this.textBox2.Size = new System.Drawing.Size(263, 23);
             this.textBox2.TabIndex = 85;
             this.textBox2.Text = "Rapora eklenecek grafikleri seçiniz.";
             // 
             // Import_Image
             // 
-            this.Import_Image.Location = new System.Drawing.Point(865, 338);
+            this.Import_Image.Location = new System.Drawing.Point(890, 338);
             this.Import_Image.Name = "Import_Image";
-            this.Import_Image.Size = new System.Drawing.Size(93, 23);
+            this.Import_Image.Size = new System.Drawing.Size(68, 23);
             this.Import_Image.TabIndex = 84;
             this.Import_Image.Text = "Gözat";
             this.Import_Image.UseVisualStyleBackColor = true;
@@ -228,9 +230,9 @@
             // 
             // openexcel
             // 
-            this.openexcel.Location = new System.Drawing.Point(865, 303);
+            this.openexcel.Location = new System.Drawing.Point(890, 303);
             this.openexcel.Name = "openexcel";
-            this.openexcel.Size = new System.Drawing.Size(93, 23);
+            this.openexcel.Size = new System.Drawing.Size(68, 23);
             this.openexcel.TabIndex = 86;
             this.openexcel.Text = "Gözat";
             this.openexcel.UseVisualStyleBackColor = true;
@@ -243,9 +245,9 @@
             // 
             // export
             // 
-            this.export.Location = new System.Drawing.Point(865, 271);
+            this.export.Location = new System.Drawing.Point(890, 271);
             this.export.Name = "export";
-            this.export.Size = new System.Drawing.Size(93, 23);
+            this.export.Size = new System.Drawing.Size(68, 23);
             this.export.TabIndex = 88;
             this.export.Text = "Gözat";
             this.export.UseVisualStyleBackColor = true;
@@ -255,11 +257,12 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox3.Enabled = false;
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox3.Location = new System.Drawing.Point(621, 305);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(238, 22);
+            this.textBox3.Size = new System.Drawing.Size(263, 23);
             this.textBox3.TabIndex = 87;
             this.textBox3.Text = "Grafikleri içeren dökümanı seçiniz.";
             // 
@@ -1117,8 +1120,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox ekipman_guc;
@@ -1213,5 +1214,6 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
