@@ -48,7 +48,7 @@ namespace Rapor
             }
             else
             {
-                MessageBox.Show("Kullanıcı adı veya şifre hatalı.");
+                label1.Text = "Kullanıcı adı veya şifre hatalı.";
                
             }
             return;
