@@ -71,8 +71,7 @@ namespace Rapor
             object missing = Missing.Value;
             Word.Application wordApp = new Word.Application();
             Document aDoc;
-
-            
+                       
 
             if (File.Exists((string)filename))
             {
@@ -104,7 +103,7 @@ namespace Rapor
                                              ref missing, ref replaceAll, ref missing,
                                              ref missing, ref missing, ref missing);
                     headerRange.Find.Text = "ekipman_adi";
-                    headerRange.Find.Replacement.Text = ekipman_adi.Text;
+                    headerRange.Find.Replacement.Text = textBox5.Text;
                     headerRange.Find.Execute(ref missing, ref missing, ref missing,
                                              ref missing, ref missing, ref missing,
                                              ref missing, ref missing, ref missing,
