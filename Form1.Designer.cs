@@ -125,7 +125,7 @@
             this.uname.Multiline = true;
             this.uname.Name = "uname";
             this.uname.Size = new System.Drawing.Size(217, 22);
-            this.uname.TabIndex = 17;
+            this.uname.TabIndex = 1;
             this.uname.Text = "Username";
             this.uname.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Uname_MouseClick);
             // 
@@ -139,7 +139,7 @@
             this.pword.Multiline = true;
             this.pword.Name = "pword";
             this.pword.Size = new System.Drawing.Size(217, 22);
-            this.pword.TabIndex = 18;
+            this.pword.TabIndex = 2;
             this.pword.Text = "Password";
             this.pword.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pword_MouseClick);
             this.pword.TextChanged += new System.EventHandler(this.Pword_TextChanged);
