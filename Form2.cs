@@ -278,7 +278,11 @@ namespace Rapor
             }
         }
 
-        
+        private void Form2_Paint(object sender, PaintEventArgs e)
+        {
+            LinearGradientBrush brushx = new LinearGradientBrush(this.ClientRectangle, Color.SkyBlue, Color.Gray, 90F);
+            e.Graphics.FillRectangle(brushx, this.ClientRectangle);
+        }
     }
 
 }

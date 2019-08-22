@@ -22,3 +22,5 @@ C:\Users\etanik\Desktop\YET_Repositories\Report_Application\obj\Debug\Rapor.cspr
 C:\Users\etanik\Desktop\YET_Repositories\Report_Application\obj\Debug\Rapor.exe
 C:\Users\etanik\Desktop\YET_Repositories\Report_Application\obj\Debug\Rapor.pdb
 C:\Users\etanik\Desktop\YET_Repositories\Report_Application\bin\Debug\Rapor.pdb
+C:\Users\etanik\Desktop\YET_Repositories\Report_Application\bin\Debug\AlphaBlendTextBox.dll
+C:\Users\etanik\Desktop\YET_Repositories\Report_Application\obj\Debug\Rapor.csproj.CopyComplete

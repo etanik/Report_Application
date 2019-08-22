@@ -24,21 +24,21 @@ namespace Rapor
 {
     public partial class Form1 : Form
     {
-        string username = "TAG";
-        string password = "TAG123";
+        string Username = "TAG";
+        string Password = "TAG123";
+
 
 
         public Form1()
         {
             InitializeComponent();
-            textBox2.PasswordChar = '•';
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
            
-
-            if (textBox1.Text==username && textBox2.Text == password)
+            if (uname.Text == Username && pword.Text == Password)
             {
                 
                 this.Hide();
@@ -48,23 +48,34 @@ namespace Rapor
             }
             else
             {
-                label1.Text = "Kullanıcı adı veya şifre hatalı.";
+                label1.Text = "The username or password is incorrect!";
                
             }
             return;
-
-
-        }
-
-        private void TextBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            textBox1.Clear();
-        }
-
-        private void TextBox2_MouseClick(object sender, MouseEventArgs e)
-        {
-            textBox2.Clear();
             
+        }
+      
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,Color.SkyBlue,Color.Black,90F);
+            e.Graphics.FillRectangle(brush, this.ClientRectangle);
+        }
+
+        private void Uname_MouseClick(object sender, MouseEventArgs e)
+        {
+            uname.Clear();
+        }
+
+        private void Pword_MouseClick(object sender, MouseEventArgs e)
+        {
+            pword.Clear();
+           
+        }
+
+        private void Pword_TextChanged(object sender, EventArgs e)
+        {
+            pword.PasswordChar = '•';
         }
     }
 }

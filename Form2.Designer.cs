@@ -565,6 +565,7 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.musteri_adi);
             this.groupBox1.Controls.Add(this.gemi_adi);
@@ -668,6 +669,7 @@
             // groupBox4
             // 
             this.groupBox4.AutoSize = true;
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.e_posta);
@@ -683,6 +685,7 @@
             // groupBox5
             // 
             this.groupBox5.AutoSize = true;
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.ivme_olcer);
             this.groupBox5.Controls.Add(this.olcum_cihazi);
             this.groupBox5.Controls.Add(this.analizator);
@@ -834,6 +837,7 @@
             // groupBox6
             // 
             this.groupBox6.AutoSize = true;
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.Controls.Add(this.label18);
             this.groupBox6.Controls.Add(this.textBox5);
             this.groupBox6.Controls.Add(this.label21);
@@ -996,6 +1000,7 @@
             // groupBox7
             // 
             this.groupBox7.AutoSize = true;
+            this.groupBox7.BackColor = System.Drawing.Color.Transparent;
             this.groupBox7.Controls.Add(this.label34);
             this.groupBox7.Controls.Add(this.comboBox2);
             this.groupBox7.Controls.Add(this.label35);
@@ -1100,6 +1105,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form2";
             this.Text = "RAPOR";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
