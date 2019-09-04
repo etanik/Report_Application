@@ -102,7 +102,7 @@ namespace Rapor
                                              ref missing, ref missing, ref missing,
                                              ref missing, ref replaceAll, ref missing,
                                              ref missing, ref missing, ref missing);
-                    headerRange.Find.Text = "ekipman_adi";
+                    headerRange.Find.Text = "ekipman_ad";
                     headerRange.Find.Replacement.Text = textBox5.Text;
                     headerRange.Find.Execute(ref missing, ref missing, ref missing,
                                              ref missing, ref missing, ref missing,
