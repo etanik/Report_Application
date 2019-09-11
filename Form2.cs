@@ -116,7 +116,7 @@ namespace Rapor
                 // find and replace commands:
                 FindAndReplace(wordApp, "siparis_no", siparis_no.Text);
                 FindAndReplace(wordApp, "mm-yy", tarih.Text);
-                FindAndReplace(wordApp, "musteri_adi", musteri_adi.Text);
+                FindAndReplace(wordApp, "musteri_adi", musteri_adi.SelectedItem);
                 FindAndReplace(wordApp, "ekipman_adi", textBox5.Text);
                 FindAndReplace(wordApp, "gign_no", textBox6.Text);
                 FindAndReplace(wordApp, "uretici_firma", uretici_firma.Text);

@@ -79,7 +79,6 @@
             this.gemi_adi = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.musteri_adi = new System.Windows.Forms.TextBox();
             this.siparis_no = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -123,6 +122,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.musteri_adi = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -566,8 +566,8 @@
             // 
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.musteri_adi);
+            this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.gemi_adi);
             this.groupBox1.Controls.Add(this.siparis_no);
             this.groupBox1.Controls.Add(this.label1);
@@ -597,14 +597,6 @@
             this.label17.Size = new System.Drawing.Size(69, 15);
             this.label17.TabIndex = 102;
             this.label17.Text = "Müşteri Adı";
-            // 
-            // musteri_adi
-            // 
-            this.musteri_adi.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.musteri_adi.Location = new System.Drawing.Point(135, 55);
-            this.musteri_adi.Name = "musteri_adi";
-            this.musteri_adi.Size = new System.Drawing.Size(153, 23);
-            this.musteri_adi.TabIndex = 2;
             // 
             // siparis_no
             // 
@@ -1081,6 +1073,16 @@
             this.maskedTextBox2.TabIndex = 23;
             this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
             // 
+            // musteri_adi
+            // 
+            this.musteri_adi.FormattingEnabled = true;
+            this.musteri_adi.Items.AddRange(new object[] {
+            "SAVUNMA TEKNOLOJİLERİ MÜHENDİSLİK ANONİM ŞİRKETİ (STM)"});
+            this.musteri_adi.Location = new System.Drawing.Point(135, 55);
+            this.musteri_adi.Name = "musteri_adi";
+            this.musteri_adi.Size = new System.Drawing.Size(153, 23);
+            this.musteri_adi.TabIndex = 103;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1176,7 +1178,6 @@
         private System.Windows.Forms.ComboBox gemi_adi;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox musteri_adi;
         private System.Windows.Forms.TextBox siparis_no;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1221,5 +1222,6 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox musteri_adi;
     }
 }
